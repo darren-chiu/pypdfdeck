@@ -66,7 +66,7 @@ def _winsize2rasterargs(window_size, aspect):
 
 def _parse_aspect_from_pdfinfo(info):
     size_str = info["Page size"]
-    width, _, height, _ = size_str.split(" ")
+    width, _, height, _, _ = size_str.split(" ")
     return float(width) / float(height)
 
 
